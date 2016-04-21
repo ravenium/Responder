@@ -103,13 +103,13 @@ Edit this file /etc/NetworkManager/NetworkManager.conf and comment the line: `dn
 
 - For OSX, please note: Responder must be launched with an IP address for the -i flag (e.g. -i YOUR_IP_ADDR). There is no native support in OSX for custom interface binding. Using -i en1 will not work. Also to run Responder with the best experience, run the following as root:
 
-    launchcl unload /System/Library/LaunchDaemons/com.apple.Kerberos.kdc.plist
+    launchctl unload /System/Library/LaunchDaemons/com.apple.Kerberos.kdc.plist
 
-    launchcl unload /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+    launchctl unload /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
 
-    launchcl unload /System/Library/LaunchDaemons/com.apple.smbd.plist
+    launchctl unload /System/Library/LaunchDaemons/com.apple.smbd.plist
 
-    launchcl unload /System/Library/LaunchDaemons/com.apple.netbiosd.plist
+    launchctl unload /System/Library/LaunchDaemons/com.apple.netbiosd.plist
 
 ## Usage ##
 
@@ -160,7 +160,7 @@ Options:
 
 NBT-NS/LLMNR Responder
 Created by Laurent Gaffie
-Copyright (C) 2013 Trustwave Holdings, Inc.
+Copyright (C) 2013-2016 Trustwave Holdings, Inc.
  
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
